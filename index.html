@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        
+        <center><h1>HOTEL RUSANTI</h1></center>
+        <form id="hotel-form">
+            <label for="cedula">Cédula del Cliente:</label>
+            <input type="text" id="cedula" required>
+
+            <label for="nombre">Nombre del Cliente:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="habitacion">Número de Habitación:</label>
+            <input type="text" id="habitacion" required>
+
+            <label for="reserva">Día de Reserva:</label>
+            <input type="date" id="reserva" required>
+
+            <label for="personas">Número de Personas:</label>
+            <input type="number" id="personas" required>
+
+            <button type="button" onclick="agregarHotel()">Agregar Reserva</button>
+        </form>
+
+        <table id="hotel-table">
+            <thead>
+                <tr>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Habitación</th>
+                    <th>Reserva</th>
+                    <th>Personas</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="hotel-list">
+                <!-- La información del hotel se mostrará aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 96%);
+}
+
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: silver;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+button {
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    background-color: green; /* Cambia el color del botón a verde */
+    color: #fff; /* Cambia el color del texto del botón a blanco */
+    border: none;
+}
+
+button[data-action="editar"] {
+    background-color: rgb(53, 53, 241); /* Cambia el color del botón a azul */
+    color: #fff; /* Cambia el color del texto del botón a blanco */
+    border: none;
+}
+
+/* Estilos específicos para el botón "Eliminar" */
+button[data-action="eliminar"] {
+    background-color: rgb(238, 25, 25); /* Cambia el color del botón a rojo */
+    color: #fff; /* Cambia el color del texto del botón a blanco */
+    border: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
